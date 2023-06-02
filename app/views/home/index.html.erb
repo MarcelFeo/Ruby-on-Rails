@@ -1,0 +1,10 @@
+<h1>Home#index</h1>
+
+<% @posts.each do |post| %>
+    <% # pergunta se a descrição é nula %>
+    <% if post.description? %>
+        <h2> <%= post.title %> <h2>
+    <% end %>
+<% end %>
+
+<%= link_to "Posts", posts_path %>
